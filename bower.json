@@ -1,0 +1,29 @@
+{
+  "name": "backbone-boilerplate",
+  "description": "",
+  "main": "",
+  "authors": [
+    "element4git <elementcontrol@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tbranyen/backbone-boilerplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "exportsOverride": {
+    "bootstrap-sass": {
+      "js": "assets/javascripts/bootstrap.js",
+      "scss": "assets/stylesheets/bootstrap/*.scss",
+      "scss/mixins":"assets/stylesheets/bootstrap/mixins/*.scss",
+      "fonts/bootstrap":"assets/fonts/**/*.*"
+    }
+  },
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
