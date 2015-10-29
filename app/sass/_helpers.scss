@@ -1,0 +1,45 @@
+.no-gutter{
+	margin-left:0;
+	margin-right:0;
+	>*{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
+.full-screen{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
+.margin-bottom{
+	margin-bottom:30px;
+}
+
+.full{
+	width:100%;
+	height:100%;
+}
+
+
+.gray-bg{
+	background-color:$gray;
+}
+.transparent{
+	background-color:rgba(0,0,0,0.1);
+}
+
+.color-head-bg{
+	background-color:$color-head;
+}
+.light-gray-bg{
+	background-color:$light-gray;
+}
+
+.secondary{
+	color:$secondary;
+}

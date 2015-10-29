@@ -62,10 +62,35 @@ good idea to update after fetching.
 npm install
 ```
 
+``` bash
+bower install
+```
 ## Build process ##
 
 The build process consists of numerous Grunt plugin tasks that work together
 to optimize your application.
+
+``` bash
+#set apache:
+
+# Remove the trailing slash from routes
+DirectorySlash Off
+
+# Enable the RewriteEngine
+RewriteEngine on
+
+# Map resources to development
+RewriteRule ^test/(.*)$ test/$1 [NC,L]
+RewriteRule ^app/(.*)$ app/$1 [NC,L]
+RewriteRule ^vendor/(.*)$ vendor/$1 [NC,L]
+
+# These conditions ensure that the file does not exist and that the current
+# request URI is not the index.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !index
+
+# Redirect remaining requests to the index.html file
+RewriteRule (.*) index.html [NC,L]
 
 ``` bash
 # To run the build process, run the NPM start script. This will automatically

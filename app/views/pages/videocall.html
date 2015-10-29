@@ -1,0 +1,34 @@
+{%extend layouts/page as content%}
+<section class="container content">
+	<section class="row">
+		<section class="chatbox col-xs-12">
+		  <header class="color-head-bg clearfix">
+		  	<button class="btn btn-default pull-right">video call</button>
+		  	<div class="pull-left"><span aria-hidden="true" class="glyphicon glyphicon-comment"></span> Chat</div>
+		  </header>
+		  <section class="chatContainer">
+		  	<article class="row agent">
+		  		<div class="col-xs-12">
+					<strong>Joe</strong>
+					<p>Hi! i'm Joe and i'll be helping you opne your new acount today. To begin with, we'll need your registered student number from USCA please - do you have this to hand?
+		  		</div>
+		  		<div class="profile" style="background-image:url(/app/img/agent_assets/agent_chat.png)"></div>
+		  	</article>
+		  </section>
+		  <footer class="light-gray-bg row no-gutter text-center">
+		  	<div class="col-xs-12 col-sm-4 col-md-3">
+			  	<span aria-hidden="true" class="glyphicon secondary glyphicon-folder-open"></span>
+			  	<span aria-hidden="true" class="glyphicon secondary glyphicon-camera"></span>
+			</div>
+		  	<form class="row">
+				<div class="col-xs-5"><input name="copy" type="text" class="form-control" /></div>
+				<div class="col-xs-2"><button class="btn send btn-primary">send message</button></div>
+				<input type='hidden' value="shelly" name="user" />
+				<input type='hidden' value="user" name="type" />
+				<input type='hidden' name="profile_image" value="/app/img/customer_assets/customer_chat.png" />
+		  	</form>
+		  </footer>
+		</section>
+	</section>
+</section>
+{%endextend%}

@@ -7,5 +7,6 @@ module.exports = ->
       jshintrc: true
 
     development: [
-      'app/**/*.js'
+      'app/*.js',
+      'app/views/**/*.js'
     ]

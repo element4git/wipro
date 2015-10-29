@@ -17,6 +17,7 @@ module.exports = ->
     "browserify:development"
     "browserify:testing"
     "connect:development"
+    "compass:dev"
     "watch"
   ]
 

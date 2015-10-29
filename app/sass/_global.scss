@@ -1,0 +1,31 @@
+[role="main"]{
+	@extend .container;
+}
+[role="row"]{
+	@include make-row();
+}
+
+[role="four"]{
+	@include make-row();
+	>*{
+		@include make-xs-column(3);
+	}
+}
+
+h1{
+	@media(max-width:$screen-sm){
+		font-size:floor(($font-size-base * 1.5));
+	}
+}
+
+section{
+	&.content{
+		height: 100%;
+		padding-top:20px;
+		&.bg{
+			background-image:url('/app/img/bank_of_me_assets/bank3.jpg');
+			background-position:center center;
+			background-size:cover;
+		}
+	}
+}

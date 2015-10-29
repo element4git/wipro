@@ -1,0 +1,100 @@
+nav, header[role="main"]{
+	@include make-row();
+}
+.main-nav{
+	background-color:$nav;
+	border-bottom:solid 1px $white;
+	a{
+		padding:60px 0 15px 0;
+		display: block;
+		border-right:solid 1px #a2cdf5;
+		&:first-child{
+			border-left:solid 1px #a2cdf5;
+		}
+		text-transform: capitalize;
+
+		&:before{
+			font-family:"Glyphicons Halflings";
+			bottom: 31px;
+		    font-size: 2em;
+		    left: 50%;
+		    margin-left: -14px;
+		    position: absolute;
+		}
+		&[href="/"]{
+			&:before{
+				content: "\e021";
+			}
+		}
+		&[href="/connect"]{
+			&:before{
+				content: "\e144";
+			}
+		}
+		&[href="/discover"]{
+			&:before{
+				content: "\e060";
+			}
+		}
+		&[href="/me"]{
+			&:before{
+				content: "\e008";
+			}
+		}
+	}
+}
+
+.hamburger-box{
+	border: 1px solid black;
+    border-radius: 4px;
+    height: 36px;
+    margin: 6px;
+    padding: 5px 7px;
+}
+.hamburger{
+  width: 30px;
+  height: 3px;
+  background: $dark-gray none repeat scroll 0 0;
+  position: relative;
+  top:11px;
+  &:after, &:before{
+    
+    border-top: 3px solid;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+  }
+  &:after{
+  	border-top-color:$dark-gray;
+    bottom: -8px;
+  }
+  &:before{
+  	border-top-color:$dark-gray;
+    top:-8px;
+  }
+}
+.logo{
+	background-image:url('/app/img/bank_of_me_assets/bankofme_small.png');
+	height:48px;
+	width:48px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.nav-logo{
+	height:48px;
+	li{
+		width:48px;
+		a{
+			padding:0;
+		}
+	}
+}
+.nav-icon{
+	span{
+		color:$dark-gray;
+		font-size:1.5em;
+	}
+}

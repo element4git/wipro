@@ -9,13 +9,13 @@ module.exports = ->
         spawn: false
         livereload: true
 
-      tasks: ['jshint']
+      tasks: ['jshint','compass']
 
       files: [
         'dist/source.js'
         'dist/test-runner.js'
-        'app/styles/**/*.css'
         'index.html'
         'package.json'
+        'app/sass/*.scss'
       ]
 
